@@ -12,16 +12,18 @@ export default function BlogPage() {
   return (
     <div>
       <h2>Our News</h2>
-
-      {posts.map(post =>
-        <div style={{ color: 'black' }}>
-          <Link key={post.id} to={`/posts/${post.id}`}>
-            <li>
-              {post.title}
-            </li>
-          </Link>
-        </div>
-      ).slice(0,15)}
+      <Link to="/posts/new">Add new post</Link>
+      {
+        posts.map(post =>
+          <div style={{ color: 'black' }}>
+            <Link key={post.id} to={`/posts/${post.id}`}>
+              <li>
+                {post.title}
+              </li>
+            </Link>
+          </div>
+        ).slice
+      }
     </div>
   );
 }

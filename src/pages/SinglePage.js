@@ -24,7 +24,7 @@ navigate(-1)
           <>
             <h1>{post.title}</h1>
             <p>{post.body}</p>
-            <a key={id} href={`/posts/${id}/edit`} >Edit this post</a>
+            <Link key={id} to={`/posts/${id}/edit`} >Edit this post</Link>
           </>
         )
       }
