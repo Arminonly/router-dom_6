@@ -2,12 +2,8 @@
   text-align: center;
 }
 
-
-
-
-
 .App-header {
-  background-color: #0a57f1;
+  background-color: #0a54e8;
   min-height: 30vh;
   display: flex;
   flex-direction: row;
@@ -16,10 +12,13 @@
   font-size: calc(10px + 2vmin);
   color: #fff;
 }
-.App-header a{
+
+ a{
 
   color: #fff;
 }
-
+.active{
+  color:lime;
+}
 
 
