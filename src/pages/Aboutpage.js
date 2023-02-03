@@ -1,10 +1,16 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
     
     export default function About(){
+        const navigate = useNavigate();
+        const goHome = () => {
+            navigate('/');
+          };
             return (
             <div>
-                <h1>About Us</h1>
-                <p>This is a demo website about React Router 6</p>
+                <h1 >About Us</h1>
+                <button onClick={goHome}>HOME</button>
             </div>
         );
 }

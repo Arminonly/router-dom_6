@@ -8,17 +8,20 @@ export default function BlogPage() {
       .then(response => response.json())
       .then(data => setPosts(data));
   }, []);
+
   return (
     <div>
       <h2>Our News</h2>
 
       {posts.map(post =>
-        <Link key={post.id} to={`/posts/${post.id}`}>
-          <li>
-            {post.title}
-          </li>
-        </Link>
-      )}
+        <div style={{ color: 'black' }}>
+          <Link key={post.id} to={`/posts/${post.id}`}>
+            <li>
+              {post.title}
+            </li>
+          </Link>
+        </div>
+      ).slice(0,15)}
     </div>
   );
 }

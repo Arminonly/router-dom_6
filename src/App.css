@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -12,13 +14,13 @@
   font-size: calc(10px + 2vmin);
   color: #fff;
 }
-
- a{
+.App-header a{
 
   color: #fff;
 }
-.active{
+.App-header a.active{
   color:lime;
 }
+
 
 
