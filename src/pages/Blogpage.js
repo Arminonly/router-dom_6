@@ -5,7 +5,6 @@ export default function BlogPage() {
   
   const [posts, setPosts] = useState([]);
 
-  console.log(useLocation)
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/posts')
       .then(response => response.json())
